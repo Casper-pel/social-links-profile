@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Gray700: hsl(0, 0%, 20%);
+    --Gray800: hsl(0, 0%, 12%);
+    --Gray900: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--Gray900);
+    color: var(--White);
+}
+
+.card{
+    background: var(--Gray800);
+    padding: 2.5rem;
+    max-width: 20rem;
+    width: 70%;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.card h1{
+    font-size: 1.85rem;
+    margin-top: 1.9rem;
+    line-height: 1.85rem;
+    font-weight: 700;
+}
+
+.card h2{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: var(--Green);
+    font-weight: 600;
+}
+
+.card p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+
+.card ul{
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.card li{
+    background: var(--Gray700);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.card li:hover{
+    background: var(--Green);
+    color: var(--Gray900);
+    cursor:  pointer;
+}
+
+.attribution{ 
+    font-size: 0.8rem; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        padding: 1rem;
+    }
+    
+    .card h1{
+        font-size: 1.6rem;
+        margin-top: 1.2rem;
+    }
+
+    .card h2{
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .card p{
+        font-size: 0.85rem;
+        margin-top: 1.6rem;
+    }
+
+    .card li{
+        font-size: 1rem;
+        padding: 0.5rem
+    }
+
+    .attribution{
+        font-size: 0.6rem;
+    }
+}
